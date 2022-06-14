@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify -- Web Player</title>
+    <!-- Cascade Style Sheet -->
+    <link rel="stylesheet" href="Spotify -- Web Player.css">
+</head>
+<body>
+    <div class="body-separator" id="side-navigation">
+        <div class="container" id="logo-container">
+            <a href="https://open.spotify.com/">
+                <img class="ui-icon" src="Media/SVGs/logo.svg" alt="open.spotify.com" title="All credit goes to open.spotify.com">
+            </a>
+        </div>
+        <div class="container" id="navigation-links">
+            <ul id="navigation-items">
+                <li class="navigation-item" linked="true">
+                    <img class="ui-icon" src="Media/SVGs/home.svg">
+                    <span class="link-name">Home</span>
+                </li>
+                <li class="navigation-item">
+                    <img class="ui-icon" src="Media/SVGs/search-icon.svg">
+                    <span class="link-name">Search</span>
+                </li>
+                <li class="navigation-item">
+                    <img class="ui-icon" src="Media/SVGs/library.svg">
+                    <span class="link-name">Your library</span>
+                </li>
+            </ul>
+            <ul id="navigation-items">
+                <li class="navigation-item" id="create-playlist">
+                    <img src="Media/SVGs/playlist-plus.svg">
+                    <span class="link-name">Create playlist</span>
+                </li>
+                <li class="navigation-item" id="liked-songs">
+                    <img src="Media/SVGs/liked-heart.svg">
+                    <span class="link-name">Liked songs</span>
+                </li>
+            </ul>
+            <hr class="navigation-divider">
+            <div class="container" id="playlists-holder">
+                <ul id="navigation-items-playlists">
+                    <li class="navigation-item" id="playlist-names">
+                        <span class="playlist-name">Coding mode</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul id="navigation-items" style="padding-top: 0px; position: fixed; bottom: 90px; width: 276px;">
+                    <li class="navigation-item">
+                        <img class="ui-icon" src="Media/SVGs/install-icon.svg" width="20px">
+                        <span class="link-name">Install app</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="body-separator" id="player-section">
+        <div class="section-separator" id="song-data">
+            <img src="Media/Images/mid-life-mini.jpg" id="album-cover">
+            <div id="song-metadata">
+                <span id="name">Growth</span><br>
+                <span id="artist">Mia Strass</span>
+            </div>
+            <div id="song-options">
+                <img class="ui-icon" src="Media/SVGs/favourite-icon.svg">
+                <img class="ui-icon" src="Media/SVGs/album-view.svg">
+            </div>
+        </div>
+        <div class="section-separator" id="spotify-player">
+            <div id="player-options">
+                <img class="ui-icon" src="Media/SVGs/shuffle-icon.svg" alt="">
+                <img class="ui-icon" src="Media/SVGs/previouse-icon.svg" alt="">
+                <img src="Media/SVGs/play-icon.svg" alt="" id="play-pause">
+                <img class="ui-icon" src="Media/SVGs/next-icon.svg" alt="">
+                <img class="ui-icon" src="Media/SVGs/repeat-icon.svg" alt="">
+            </div>
+            <div id="player-timeline" style="height: 25%;">
+                <span class="time-stamp">0:30</span>
+                <input type="range" min="0" max="100" value="25" disabled>
+                <span class="time-stamp">2:12</span>
+            </div>
+        </div>
+        <div class="section-separator" id="player-controllers">
+            <img class="ui-icon" src="Media/SVGs/queue-icon.svg" alt="">
+            <img class="ui-icon" src="Media/SVGs/devices-icon.svg" alt="">
+            <div style="display: flex; justify-content: center; gap: 0px;">
+                <img class="ui-icon" src="Media/SVGs/volume-icon.svg" alt="">
+                <input type="range" min="0" max="100" value="100" disabled>
+            </div>
+        </div>
+    </div>
+    <div class="body-separator" id="spotify-content">
+        <div class="container" id="top-bar">
+            <div id="directors">
+                <img class="ui-icon" src="Media/SVGs/backward-icon.svg" alt="backward-icon" style="margin-right: 16px;">
+                <img class="ui-icon" src="Media/SVGs/foreward-icon.svg" alt="foreward-icon" dir="true">
+            </div>
+            <div id="user-data">
+                <div id="user"></div>
+                <span>nivindu_lakshitha</span>
+                <img class="ui-icon" src="Media/SVGs/dropdown-icon.svg" style="margin-inline-end: 6px;">
+            </div>
+        </div>
+        <div class="container head-title">
+            <span>Good evening</span>
+        </div>
+        <div class="container" id="recently-listened">
+            <div class="block">
+                <img src="Media/Images/coding-mode.jpg" alt="list-1">
+                <span>Coding Mode</span>
+                <div class="play-btn">
+                    <img src="Media/SVGs/play-icon.svg" alt="play:list-1">
+                </div>
+            </div>
+            <div class="block">
+                <img src="Media/Images/ariana-grande.jpg" alt="list-2">
+                <span>Ariana Grande</span>
+                <div class="play-btn">
+                    <img src="Media/SVGs/play-icon.svg" alt="play:list-2">
+                </div>
+            </div>
+            <div class="block">
+                <img src="Media/Images/deep-focus.jpg" alt="list-3">
+                <span>Deep Focus</span>
+                <div class="play-btn">
+                    <img src="Media/SVGs/play-icon.svg" alt="play:list-3">
+                </div>
+            </div>
+            <div class="block">
+                <img src="Media/Images/lofi-coding.jpg" alt="list-2">
+                <span>Lofi Coding (beats to chill/relax to)</span>
+                <div class="play-btn">
+                    <img src="Media/SVGs/play-icon.svg" alt="play:list-2">
+                </div>
+            </div>
+            <div class="block">
+                <img src="Media/Images/lofi-beats.jpg" alt="list-2">
+                <span>lofi beats</span>
+                <div class="play-btn">
+                    <img src="Media/SVGs/play-icon.svg" alt="play:list-2">
+                </div>
+            </div>
+        </div>
+        <div class="container title">
+            <span>Made For nivindu_lakshitha</span>
+            <span class="caption">Get better recommendations the more you listen. <span class="see-all">SEE ALL</span></span>
+        </div>
+        <div class="container" id="daily-mixes">
+            <div class="mix-card">
+                <div class="album-image" style="background-image: url('Media/Images/user-image.jpg');"></div>
+                <div class="play-btn">
+                    <img src="Media/SVGs/play-icon.svg">
+                </div>
+                <div class="mix-description">
+                    <span id="name">Discover Weekly</span>
+                    <span id="artists">Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday.</span>
+                </div>
+            </div>
+            <div class="mix-card">
+                <div class="album-image" style="background-image: url('Media/Images/daily-mix1.jpg');"></div>
+                <div class="play-btn">
+                    <img src="Media/SVGs/play-icon.svg">
+                </div>
+                <div class="mix-description">
+                    <span id="name">Daily Mix 1</span>
+                    <span id="artists">Kupla, beeno, SwuM and more</span>
+                </div>
+            </div>
+            <div class="mix-card">
+                <div class="album-image" style="background-image: url('Media/Images/daily-mix2.jpg');"></div>
+                <div class="play-btn">
+                    <img src="Media/SVGs/play-icon.svg">
+                </div>
+                <div class="mix-description">
+                    <span id="name">Daily Mix 2</span>
+                    <span id="artists">Lama House, Lucas Delphy, Benjamin Martins and more</span>
+                </div>
+            </div>
+            <div class="mix-card">
+                <div class="album-image" style="background-image: url('Media/Images/daily-mix3.jpg');"></div>
+                <div class="play-btn">
+                    <img src="Media/SVGs/play-icon.svg">
+                </div>
+                <div class="mix-description">
+                    <span id="name">Daily Mix 3</span>
+                    <span id="artists">Mia Strass, August Wilhelmsson, LUCHSTER and more</span>
+                </div>
+            </div>
+            <div class="mix-card">
+                <div class="album-image" style="background-image: url('Media/Images/daily-mix4.jpg');"></div>
+                <div class="play-btn">
+                    <img src="Media/SVGs/play-icon.svg">
+                </div>
+                <div class="mix-description">
+                    <span id="name">Daily Mix 4</span>
+                    <span id="artists">Ariana Grande, Katy Perry, Avicii and more</span>
+                </div>
+            </div>
+        </div>
+        <p id="credits">All credits goes to <a href="https://open.spotify.com/">Spotify</a> </p> 
+    </div>
+</body>
+</html>
