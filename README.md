@@ -1,5 +1,5 @@
 # </> Layer: Front-End
-### Description: Cloned sketch UI of ![open.spotify.com](https://open.spotify.com/) (web player)
+### Description: Cloned sketch UI of [open.spotify.com](https://open.spotify.com/) (web player)
 ---
 > ### Languages and Versions:
 > | Language  | Version |
