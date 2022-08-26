@@ -8,7 +8,7 @@
 > | CSS       | 3       |
 ---
 > ### Demo
-> <img src="https://drive.google.com/uc?export=download&id=15C1neeG97CrI-tKU4NiIuAcbx953niiF" width="200">
+> <img src="https://github.com/coding-desk20/coding-desk20/blob/main/images/spotify-ui.png?raw=true" width="200">
 ---
 > ### Requirements: None
 ---
